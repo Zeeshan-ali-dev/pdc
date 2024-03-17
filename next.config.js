@@ -6,10 +6,10 @@ const nextConfig = {
   experimental: {
     instrumentationHook: true
   },
-  webpack: config => {
-    config.externals.push('pino-pretty', 'lokijs', 'encoding')
-    return config
-  }
+  // webpack: config => {
+  //   config.externals.push('pino-pretty', 'lokijs', 'encoding')
+  //   return config
+  // }
 };
 
 module.exports = nextConfig;
