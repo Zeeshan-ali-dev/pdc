@@ -16,10 +16,10 @@ import Feature from "./components/home/features";
 import CountDown from "./components/home/countdown";
 import dynamic from 'next/dynamic'
 
-const WhoWeAreSection = dynamic(() => import("./components/home/who-we-are"))
+// const WhoWeAreSection = dynamic(() => import("./components/home/who-we-are"))
 const Tokenomics = dynamic(() => import("./components/home/tokenomics"))
 const Roadmap = dynamic(() => import("./components/home/roadmap"))
-const Community = dynamic(() => import("./components/home/community"))
+// const Community = dynamic(() => import("./components/home/community"))
 const HeroSection = dynamic(() => import("./components/home/hero"))
 
 // images
