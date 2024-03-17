@@ -46,7 +46,7 @@ export default function Home() {
       </div>
       <Partners />
       <Shelters />
-      <Community />
+      {/* <Community /> */}
       <Testimonials />
       <div className="">
         <Build />
