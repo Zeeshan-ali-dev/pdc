@@ -1,8 +1,8 @@
 import { Archivo } from "next/font/google";
 import "./globals.css";
 import "./styles.css";
-import Footer from "./components/common/footer";
-import MainNav from "./components/common/main-nav";
+// import Footer from "./components/common/footer";
+// import MainNav from "./components/common/main-nav";
 import "aos/dist/aos.css";
 import Head from "next/head";
 import {AppContextProvider} from '../context/appContext/appContextProvider'
@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
         {/* <Web3ModalWrapper> */}
         {/* <PrivateSaleContextProvider> */}
           
-        <MainNav />
+        {/* <MainNav /> */}
             {children}
-          <Footer />
+          {/* <Footer /> */}
           {/* </PrivateSaleContextProvider> */}
        {/* </Web3ModalWrapper> */}
        </AppContextProvider>
