@@ -201,3 +201,12 @@ import Link from "next/link";
 // };
 
 // export default Media;
+
+
+const page = () => {
+  return (
+    <div>page</div>
+  )
+}
+
+export default page
