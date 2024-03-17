@@ -8,8 +8,8 @@ import Head from "next/head";
 import {AppContextProvider} from '../context/appContext/appContextProvider'
 import 'react-toastify/dist/ReactToastify.css';
 // import PrivateSaleContextProvider from '../context/privateSaleContext/PrivateSaleContextProvider'
-import Web3ModalWrapper from '../app/components/web3ModalWrapper'
-import ClientLayoutWrapper from './components/common/ClientLayoutWrapper'
+// import Web3ModalWrapper from '../app/components/web3ModalWrapper'
+// import ClientLayoutWrapper from './components/common/ClientLayoutWrapper'
 
 const arc = Archivo({ subsets: ["latin"] });
 
@@ -25,18 +25,18 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <body className={`${arc.className} flex flex-col min-h-screen`} >
-        <ClientLayoutWrapper>
+        {/* <ClientLayoutWrapper> */}
        <AppContextProvider>
-        <Web3ModalWrapper>
+        {/* <Web3ModalWrapper> */}
         {/* <PrivateSaleContextProvider> */}
           
         <MainNav />
             {children}
           <Footer />
           {/* </PrivateSaleContextProvider> */}
-       </Web3ModalWrapper>
+       {/* </Web3ModalWrapper> */}
        </AppContextProvider>
-       </ClientLayoutWrapper>
+       {/* </ClientLayoutWrapper> */}
        
       
       </body>
