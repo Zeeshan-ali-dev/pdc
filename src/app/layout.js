@@ -5,7 +5,7 @@ import "./styles.css";
 // import MainNav from "./components/common/main-nav";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import {AppContextProvider} from '../context/appContext/appContextProvider'
+// import {AppContextProvider} from '../context/appContext/appContextProvider'
 import 'react-toastify/dist/ReactToastify.css';
 // import PrivateSaleContextProvider from '../context/privateSaleContext/PrivateSaleContextProvider'
 // import Web3ModalWrapper from '../app/components/web3ModalWrapper'
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`${arc.className} flex flex-col min-h-screen`} >
         {/* <ClientLayoutWrapper> */}
-       <AppContextProvider>
+       {/* <AppContextProvider> */}
         {/* <Web3ModalWrapper> */}
         {/* <PrivateSaleContextProvider> */}
           
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
           {/* <Footer /> */}
           {/* </PrivateSaleContextProvider> */}
        {/* </Web3ModalWrapper> */}
-       </AppContextProvider>
+       {/* </AppContextProvider> */}
        {/* </ClientLayoutWrapper> */}
        
       
