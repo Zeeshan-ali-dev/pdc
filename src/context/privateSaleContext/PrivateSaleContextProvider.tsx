@@ -53,16 +53,16 @@ const PrivateSaleContextProvider = ({children}:any) => {
         setBalance(data?.formatted)
     }
 
-    useEffect(() => {
-        fetchContractData()
-    }, [])
+    // useEffect(() => {
+    //     fetchContractData()
+    // }, [])
 
 
-    useEffect(() => {
-        if(isConnected){
-            getUserBalance();
-        }
-    }, [isConnected, coin])
+    // useEffect(() => {
+    //     if(isConnected){
+    //         getUserBalance();
+    //     }
+    // }, [isConnected, coin])
 
 
     const DepositCoins = async (amount) => {
