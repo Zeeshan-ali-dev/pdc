@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import Head from "next/head";
 import {AppContextProvider} from '../context/appContext/appContextProvider'
 import 'react-toastify/dist/ReactToastify.css';
-import PrivateSaleContextProvider from '../context/privateSaleContext/PrivateSaleContextProvider'
+// import PrivateSaleContextProvider from '../context/privateSaleContext/PrivateSaleContextProvider'
 import Web3ModalWrapper from '../app/components/web3ModalWrapper'
 import ClientLayoutWrapper from './components/common/ClientLayoutWrapper'
 
@@ -28,12 +28,12 @@ export default function RootLayout({ children }) {
         <ClientLayoutWrapper>
        <AppContextProvider>
         <Web3ModalWrapper>
-        <PrivateSaleContextProvider>
+        {/* <PrivateSaleContextProvider> */}
           
         <MainNav />
             {children}
           <Footer />
-          </PrivateSaleContextProvider>
+          {/* </PrivateSaleContextProvider> */}
        </Web3ModalWrapper>
        </AppContextProvider>
        </ClientLayoutWrapper>
