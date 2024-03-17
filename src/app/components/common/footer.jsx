@@ -149,7 +149,7 @@ export default function Footer() {
                 </div> */}
                 <div className="flex-1 mt-16 grid grid-cols-3 justify-between sm:flex">
                     {footerNavs.map((item, idx) => (
-                        <ul data-aos="fade-in" className="flex flex-col text-center md:text-start  gap-[6px] text-gray-300" key={idx}>
+                        <ul  className="flex flex-col text-center md:text-start  gap-[6px] text-gray-300" key={idx}>
                             <h4 className="text-[#FFF] font_cat text-[16px] not-italic font-bold leading-[28px] sm:pb-2">
                                 {item.label}
                             </h4>
@@ -166,7 +166,7 @@ export default function Footer() {
                         </ul>
                     ))}
 
-                    <div data-aos="fade-in" className="md:mt-[-32px] hidden md:block mt-0 w-[338px] h-[180px] p-[32px_42px] bg-[rgb(37,37,37,0.2)] rounded-[10px]">
+                    <div  className="md:mt-[-32px] hidden md:block mt-0 w-[338px] h-[180px] p-[32px_42px] bg-[rgb(37,37,37,0.2)] rounded-[10px]">
                         <h4 className="text-[#FFF] font_cat text-[16px] not-italic font-bold leading-[28px] sm:pb-2">
                             Subscribe
                         </h4>
@@ -189,7 +189,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-in" className=" md:hidden mt-10 mx-auto block w-full h-fit p-[32px_42px] bg-[rgb(37,37,37,0.2)]">
+                <div  className=" md:hidden mt-10 mx-auto block w-full h-fit p-[32px_42px] bg-[rgb(37,37,37,0.2)]">
                     <h4 className="text-[#FFF] font_cat text-[16px] not-italic font-bold leading-[28px] pb-2">
                         Subscribe
                     </h4>
@@ -298,7 +298,7 @@ export default function Footer() {
                         </a>
                     </div> */}
 
-                    <ul data-aos="fade-in" className="flex gap-[40px] mx-auto  justify-center">
+                    <ul  className="flex gap-[40px] mx-auto  justify-center">
                         {
                             // FooLink && FooLink.map((ele, index) => {
                             //     return (
@@ -315,7 +315,7 @@ export default function Footer() {
 
                         }
                     </ul>
-                    {/* <ul data-aos="fade-in" className="flex gap-[15px]  justify-center mt-[20px] md:mt-0">
+                    {/* <ul  className="flex gap-[15px]  justify-center mt-[20px] md:mt-0">
                         {FooSocials && FooSocials.map((item, index) => {
                             return (
                                 <>

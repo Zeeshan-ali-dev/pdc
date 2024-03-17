@@ -1,19 +1,26 @@
 "use client";
 
-import HeroSection from "./components/home/hero";
+// import HeroSection from "./components/home/hero";
 import LiveEvents from "./components/home/live-events";
-import Roadmap from "./components/home/roadmap";
-import Tokenomics from "./components/home/tokenomics";
-import WhoWeAreSection from "./components/home/who-we-are";
+// import Roadmap from "./components/home/roadmap";
+// import Tokenomics from "./components/home/tokenomics";
+// import WhoWeAreSection from "./components/home/who-we-are";
 import MiniAboutUs from "./components/home/us";
 import Partners from "./components/home/partners";
 import Shelters from "./components/home/shelters";
-import Community from "./components/home/community";
+// import Community from "./components/home/community";
 import Testimonials from "./components/home/testimonials";
 import Build from "./components/home/build";
 import Cta from "./components/home/cta";
 import Feature from "./components/home/features";
 import CountDown from "./components/home/countdown";
+import dynamic from 'next/dynamic'
+
+const WhoWeAreSection = dynamic(() => import("./components/home/who-we-are"))
+const Tokenomics = dynamic(() => import("./components/home/tokenomics"))
+const Roadmap = dynamic(() => import("./components/home/roadmap"))
+const Community = dynamic(() => import("./components/home/community"))
+const HeroSection = dynamic(() => import("./components/home/hero"))
 
 // images
 
@@ -24,7 +31,7 @@ export default function Home() {
 
       <div className="count_sec border-t-[0.001px] border-transparent">
         <CountDown />
-        <WhoWeAreSection />
+        {/* <WhoWeAreSection /> */}
       </div>
 
       <div className="live_sec">
