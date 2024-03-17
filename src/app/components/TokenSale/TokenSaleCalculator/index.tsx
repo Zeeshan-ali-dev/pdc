@@ -20,9 +20,9 @@ const TokenSaleCalculator = ({handleSalePage}:any) => {
         setTokens(totalTokens);
     }
 
-    useEffect(() => {
-        calculateTokens()
-    },[usd])
+    // useEffect(() => {
+    //     calculateTokens()
+    // },[usd])
 
 
   return (

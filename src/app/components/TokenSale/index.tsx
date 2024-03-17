@@ -23,22 +23,22 @@ const TokenSalePage = () => {
       }
     }
   
-    useEffect(() => {
-      if(call){
-        getUser()
-        call = false;
-      }
-    },[])
+    // useEffect(() => {
+    //   if(call){
+    //     getUser()
+    //     call = false;
+    //   }
+    // },[])
 
     const handleSalePage = (show: boolean) => {
-        if(show){
-            if(isLoggedIn){
-                setShowSalePage(true)
-            }else{
-                toast.error('You need to login first')
-                setShowSalePage(false)
-            }
-        }
+        // if(show){
+        //     if(isLoggedIn){
+        //         setShowSalePage(true)
+        //     }else{
+        //         toast.error('You need to login first')
+        //         setShowSalePage(false)
+        //     }
+        // }
     }
 
     // useEffect(() => {
